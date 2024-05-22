@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "theme": "ui",
   "description": "Solarized Dark UI Theme for Inkdrop",
+  "repository": "https://github.com/touchedthecode/inkdrop-solarized-dark-ui",
   "styleSheets": [
     "theme.css"
   ],
