@@ -5,86 +5,103 @@
 @headerFont        : -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
 @pageFont          : -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
 @importGoogleFonts : false;
-@useCustomScrollbars: false;
+@useCustomScrollbars: true;
 
+/* Solarized Dark Palette */
+@base03: #002b36;
+@base02: #073642;
+@base01: #586e75;
+@base00: #657b83;
+@base0:  #839496;
+@base1:  #93a1a1;
+@base2:  #eee8d5;
+@base3:  #fdf6e3;
+@yellow: #b58900;
+@orange: #cb4b16;
+@red:    #dc322f;
+@magenta:#d33682;
+@violet: #6c71c4;
+@blue:   #268bd2;
+@cyan:   #2aa198;
+@green:  #859900;
 
 /*-------------------
       Side Bar
 --------------------*/
-@sidebarBackground     : @pageBackground;
-@sidebarMenuItemActiveBackground: hsl(var(--hsl-slate-500) / 40%);
+@sidebarBackground: @base03;
+@sidebarMenuItemActiveBackground: @base02;
 @sidebarMenuItemInactiveBackground: rgba(0, 0, 0, 0.2);
-@sidebarMenuSectionColor: @lightTextColor;
+@sidebarMenuSectionColor: @base1;
 @sidebarMenuSectionSeparatorColor: rgba(255,255,255,0.1);
-@sidebarMenuItemColor  : @textColor;
-@sidebarMenuActionColor : @lightTextColor;
-@sidebarMenuActionHoverColor : @primaryColorFocus;
-@sidebarSyncStatusViewBackground: #26292C;
-@sidebarSyncStatusViewTextColor: @textColor;
-@sidebarSyncStatusViewDetailColor: @lightTextColor;
-@sidebarScrollbarWidth: 6px;
+@sidebarMenuItemColor: @base0;
+@sidebarMenuActionColor: @base1;
+@sidebarMenuActionHoverColor: @blue;
+@sidebarSyncStatusViewBackground: @base03;
+@sidebarSyncStatusViewTextColor: @base0;
+@sidebarSyncStatusViewDetailColor: @base1;
+@sidebarScrollbarWidth: 4px;
 @sidebarScrollbarTrackBackground: rgba(0,0,0,0.02);
 @sidebarScrollbarThumbBackground: rgba(255,255,255,0.1);
 
 /*-------------------
       Scroll Bar
 --------------------*/
-@scrollbarWidth: 6px;
+@scrollbarWidth: 4px;
 @scrollbarTrackBackground: rgba(0,0,0,0.02);
 @scrollbarThumbBackground: rgba(255,255,255,0.1);
 
 /*-------------------
       Note List Bar
 --------------------*/
-@noteListBarBackground: #34393D;
+@noteListBarBackground: @base03;
 @noteListBarPinnedSectionHeaderBackground: rgba(255, 255, 255, 0.05);
 @noteListBarPinnedSectionHeaderBorderBottom: 1px solid rgba(255, 255, 255, 0.1);
 @noteListBarPinnedSectionFooterBorderBottom: 4px solid rgba(255, 255, 255, 0.2);
-@noteListViewItemColor: @mutedTextColor;
-@noteListViewItemSeparatorBorder: 1px solid @white;
-@noteListViewItemDateColor: @primaryColor;
-@noteListViewItemTagColor: @primaryColor;
-@noteListViewItemInactiveBackground: #6987AF30;
-@noteListViewItemActiveBackground: #6987AF60;
-@noteListViewItemActiveColor: @textColor;
-@noteListViewItemActiveDateColor: @textColor;
-@noteListViewItemActiveTagColor: @textColor;
+@noteListViewItemColor: @base0;
+@noteListViewItemSeparatorBorder: 1px solid @base02;
+@noteListViewItemDateColor: @cyan;
+@noteListViewItemTagColor: @cyan;
+@noteListViewItemInactiveBackground: rgba(0, 0, 0, 0.2);
+@noteListViewItemActiveBackground: @base02;
+@noteListViewItemActiveColor: @base0;
+@noteListViewItemActiveDateColor: @base0;
+@noteListViewItemActiveTagColor: @base0;
 @noteListViewItemFocusInnerShadow: none;
 @noteSearchBarBackground: @noteListBarBackground;
-@noteSearchBarBorderBottom: 1px solid @white;
+@noteSearchBarBorderBottom: 1px solid @base02;
 @noteSearchBarInputBorder: 1px solid transparent;
-@noteSearchBarInputBackground: @inputBackground;
+@noteSearchBarInputBackground: @base02;
 
 /*-------------------
       Editor
 --------------------*/
-@editorBackground: @pageBackground;
+@editorBackground: @base03;
 
 /*-------------------
       Header Note Menu
 --------------------*/
 @headerNoteMenuBackground: transparent;
-@headerNoteMenuColor: @lightTextColor;
+@headerNoteMenuColor: @base1;
 @headerNoteMenuActionItemActiveBackground: rgba(49, 204, 236, 0.3);
 @headerNoteMenuActionItemActiveBorder: 1px solid rgba(49, 204, 236, 0.8);
-@headerNoteMenuActionItemSeparatorBorder: 1px solid @whiteDown;
-@headerNoteMenuEncryptButtonColor: @yellowTextColor;
-@headerNoteMenuEncryptButtonBackground: @yellowBackground;
+@headerNoteMenuActionItemSeparatorBorder: 1px solid @base02;
+@headerNoteMenuEncryptButtonColor: @yellow;
+@headerNoteMenuEncryptButtonBackground: @base03;
 
 /*-------------------
       Preferences
 --------------------*/
-@preferencesSidebarBackground: @white;
-@preferencesSidebarItemActiveBackground: #6987AF40;
-@preferencesViewBackground: @offWhite;
+@preferencesSidebarBackground: @base02;
+@preferencesSidebarItemActiveBackground: rgba(255, 255, 255, 0.1);
+@preferencesViewBackground: @base03;
 
 /*-------------------
       Task Icons
 --------------------*/
-@taskIconActive: hsl(var(--hsl-slate-400));
-@taskIconOnHold: hsl(var(--hsl-amber-500));
-@taskIconCompleted: hsl(var(--hsl-emerald-500));
-@taskIconDropped: hsl(var(--hsl-rose-400));
+@taskIconActive: @base0;
+@taskIconOnHold: @yellow;
+@taskIconCompleted: @green;
+@taskIconDropped: @red;
 
 /*-------------------
   Task Progress View

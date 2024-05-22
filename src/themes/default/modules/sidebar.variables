@@ -16,7 +16,7 @@
 @dimmerTransition: opacity @duration;
 
 /* Color below page */
-@canvasBackground: @lightBlack;
+@canvasBackground: @base02;
 
 /* Shadow */
 @boxShadow: 0px 0px 20px @borderColor;

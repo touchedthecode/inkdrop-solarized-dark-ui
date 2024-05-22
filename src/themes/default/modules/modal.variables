@@ -2,7 +2,7 @@
              Modal
 *******************************/
 
-@background: @white;
+@background: @base02;
 @border: none;
 @zIndex: 1001;
 @borderRadius: @defaultBorderRadius;
